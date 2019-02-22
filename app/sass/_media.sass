@@ -1,0 +1,296 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1660px
++media-breakpoint-down(exl)
+
+    .services
+        .card
+            .card-footer
+                a
+                    width: 270px
+                    height: 50px
+                    line-height: 50px
+            .list-group-item
+                font-size: 14px
+
+// ≥1460px
++media-breakpoint-down(xxl)
+
+    .header
+        .block-menu
+            a.navbar-brand
+                img
+                    width: 200px
+        .navbar-nav
+            font-size: 14px
+        a.header-phone
+            font-size: 18px
+
+    .services
+        .card
+            img
+                width: 264px
+            .card-footer
+                padding: 15% 0
+                a
+                    width: 250px
+                    height: 45px
+                    line-height: 45px
+
+    .footer
+        a
+            display: block
+
+// ≥1200px +
++media-breakpoint-down(xl)
+
+    .header
+        .navbar-nav
+            font-size: 14px
+        a.header-phone
+            font-size: 16px
+        .block-menu
+            button.button-style
+                width: 150px
+                height: 30px
+                line-height: 30px
+                font-size: 14px
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+    .header
+        .block-menu
+            a.navbar-brand
+                img
+                    width: 150px
+        a.header-phone
+            font-size: 14px
+    .services
+        .card
+            img
+                width: 180px
+            .card-footer
+                a
+                    width: 200px
+                    height: 35px
+                    line-height: 35px
+
+// ≥992px
++media-breakpoint-down(md)
+
+    .header
+        .block-menu
+            a.navbar-brand
+                img
+                    width: 250px
+        .navbar-toggler
+            color: #fff
+            background-color: rgba(#000, .3)
+        .navbar-collapse
+            z-index: 9
+            width: content-box
+            background-color: rgba(#000, .9)
+            padding: $gutter
+        .navbar-nav
+            font-size: 18px
+            display: block
+            margin-bottom: $gutter / 2
+        a.header-phone
+            font-size: 18px
+            display: block
+            margin-bottom: $gutter / 2
+
+        .block-view
+            .first-p
+                font-size: 26px
+            h1
+                font-size: 48px
+            .description-p
+                font-size: 16px
+            .button-style
+                width: 250px
+                height: 50px
+                line-height: 50px
+
+    .services
+        .card
+            img
+                width: 160px
+            .card-footer
+                a
+                    width: 150px
+                    height: 30px
+                    line-height: 30px
+
+    .advantages
+        .slogan
+            p
+                font-size: 28px
+
+    .contacts
+        padding-bottom: 30%
+        .contacts-left
+            a.contact-phone
+                font-size: 28px
+
+    .footer
+        .footer-logo
+            img
+                width: 200px
+
+// ≥768px
++media-breakpoint-down(sm)
+
+    .header
+        .block-view
+            .first-p
+                font-size: 20px
+                margin-bottom: $gutter
+            h1
+                font-size: 34px
+                margin-bottom: $gutter
+            .description-p
+                font-size: 16px
+            .button-style
+                width: 200px
+                height: 45px
+                line-height: 45px
+                font-size: 16px
+
+    .stock
+        img
+            max-width: 300px
+
+    .services
+        .card
+            img
+                width: 100%
+            .card-body
+                h5
+                    font-size: 28px
+            .card-footer
+                a
+                    width: 250px
+                    height: 55px
+                    line-height: 55px
+                    position: relative
+            .list-group-item
+                font-size: 18px
+
+    .stock
+        .col-lg-6
+            margin-bottom: $gutter
+
+    .advantages
+        .slogan
+            display: none
+
+    .contacts
+        padding-bottom: 3%
+
+    .footer
+        position: relative
+
+// ≥576px
++media-breakpoint-down(xs)
+
+    .stock
+        .button-style
+            width: 200px
+            height: 40px
+            line-height: 40px
+        img
+            max-width: 300px
+
+    .reviews
+        .swiper-container
+            .review
+                .review-text
+                    font-size: 16px
+
+
+// ≥490px
++media-breakpoint-down(xsm)
+
+    .header
+        .block-menu
+            a.navbar-brand
+                img
+                    width: 200px
+        .block-view
+            .first-p
+                font-size: 18px
+            h1
+                font-size: 28px
+            .description-p
+                font-size: 14px
+            .button-style
+                width: 200px
+                height: 45px
+                line-height: 45px
+
+    .services
+        h1
+            font-size: 40px
+        .card
+            .card-body
+                h5
+                    font-size: 24px
+            .card-footer
+                a
+                    width: 200px
+                    height: 50px
+                    line-height: 50px
+            .list-grop-item
+                font-size: 18px
+
+    .stock
+        h1
+            font-size: 40px
+
+    .examples
+        h1
+            font-size: 40px
+
+    .stages
+        h1
+            font-size: 40px
+
+    .reviews
+        h1
+            font-size: 40px
+
+    .contacts
+        .contacts-right
+            .form-input, .form-input-select
+                width: 250px
+                font-size: 16px
+                input
+                    width: 150px
+
+// ≥400px
++media-breakpoint-down(xxsm)
+
+    .contacts
+        .button-style
+            width: 200px
+            height: 35px
+            line-height: 35px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

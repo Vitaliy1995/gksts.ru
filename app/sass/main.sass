@@ -1,0 +1,607 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.button-style
+    display: inline-block
+    width: 300px
+    height: 55px
+    line-height: 55px
+    background-color: rgba($accent, .7)
+    transition: background-color .5s ease
+    transition: color .1s ease
+    text-align: center
+    color: #000
+    text-transform: uppercase
+    font-size: 20px
+    border-radius: $gutter / 2
+    border: none
+    cursor: pointer
+    &:hover, &:active
+        background-color: rgba($accent, 1)
+        text-decoration: none
+        color: #fff
+
+.header
+    font-size: 16px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    height: 100vh
+    position: relative
+    .header-wrapper
+        height: 100%
+        width: 100%
+        background-color: rgba(#000, .5)
+    a.nav-link, a.header-phone
+        color: #fff
+        transition: color .25s ease
+        &:hover, &:active
+            color: $accent
+    .block-menu
+        max-width: 5000px
+        margin: 0 auto
+        background-color: rgba(#000, .4)
+        position: fixed
+        transition: background-color .25s ease-in
+        z-index: 99
+        a.navbar-brand
+            img
+                width: 259px
+        button.button-style
+            width: 200px
+            height: 35px
+            line-height: 35px
+            font-size: 18px
+    .navbar-nav
+        font-size: 18px
+    a.header-phone
+        margin-right: $gutter / 2
+        font-size: 20px
+
+    .block-view
+        height: 100%
+        display: flex
+        align-items: center
+        align-content: center
+        justify-content: center
+        overflow: auto
+        text-align: center
+        color: #fff
+        text-transform: uppercase
+        .first-p
+            font-size: 32px
+            margin-bottom: 0
+            &::after, &::before
+                content: ''
+                display: inline-block
+                vertical-align: middle
+                max-width: 200px
+                width: 100%
+                height: 1px
+                background: #000
+                margin:
+                    left: $gutter / 2
+                    right: $gutter / 2
+            &::before
+                margin-left: -100%
+            &::after
+                margin-right: -100%
+        h1
+            font-size: 64px
+            font-weight: bold
+        .description-p
+            font-size: 18px
+
+    .go
+        width: 60px
+        height: 60px
+        line-height: 60px
+        margin: 1px auto
+        background-color: rgba(#fff, .1)
+        font-size: 35px
+        border-radius: 50%
+        text-align: center
+        position: absolute
+        bottom: $gutter
+        left: 0
+        right: 0
+        transition: background-color .25s ease
+        animation: up-down .7s linear alternate infinite
+        &:hover
+            background-color: rgba(#fff, .4)
+            font-size: 40px
+        a
+            color: #fff
+            text-decoration: none
+            &:hover, a:active
+                color: #fff
+
+@-webkit-keyframes up-down
+    100%
+        -webkit-transform: translateY(-10px)
+
+
+@keyframes up-down
+    100%
+        transform: translateY(-10px)
+
+.main
+    section
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+
+.services
+    position: relative
+    text-align: center
+    padding-top: $gutter
+    padding-bottom: $gutter
+    h1
+        font-size: 54px
+        margin-bottom: $gutter
+    .container
+        max-width: 1900px
+        padding:
+            left: $gutter
+            right: $gutter
+    .card
+        margin-bottom: $gutter
+        text-align: left
+        border-radius: $gutter / 3
+        box-shadow: 0 0 $gutter / 3 rgba($accent, .4)
+        img
+            max-width: 287px
+            height: auto
+            margin: 0 auto
+        .card-body
+            height: auto
+            flex: 0 0
+            h5
+                font-size: 20px
+                font-weight: bold
+        ul
+            align-items: inherit
+        .card-footer
+            flex: 1 1
+            background-color: transparent
+            position: relative
+            height: 100%
+            padding: 10% 0
+            a
+                display: block
+                margin: 0 auto
+                position: absolute
+                bottom: $gutter / 2
+                left: 0
+                right: 0
+
+.stock
+    text-align: center
+    position: relative
+    color: #fff
+    font-size: 16px
+    padding-bottom: $gutter
+    padding-top: $gutter
+    h1
+        font-size: 54px
+        margin-bottom: $gutter
+    img
+        max-width: 500px
+        max-height: 500px
+    .stock-desc
+        text-align: left
+        padding:
+            left: $gutter * 3
+            right: $gutter * 3
+        p.first-p
+            font-size: 20px
+            font-weight: bold
+    .block-stock
+        border: 3px solid $accent
+        padding: $gutter / 2
+        margin-bottom: $gutter
+        h4
+            text-transform: uppercase
+            font-weight: bold
+        .stock-accent
+            color: $accent
+            font-size: 24px
+            margin-bottom: 0
+            margin-top: $gutter / 2
+
+.advantages
+    position: relative
+    text-align: center
+    .container
+        max-width: 5000px
+        margin: 0
+        .col-md-6
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+    .slogan
+        p
+            text-align: right
+            margin-top: $gutter
+            margin-right: $gutter
+            font-size: 42px
+            font-weight: bold
+    h1
+        font-size: 42px
+        margin-top: 0
+    .advantages-list
+        margin: $gutter $gutter / 2
+        div
+            margin-bottom: $gutter / 3
+            text-align: left
+        i
+            font-size: 48px
+            color: $accent
+            font-weight: 200
+        .primary
+            margin-top: $gutter / 3
+            text-transform: uppercase
+            font-size: 20px
+            font-weight: bold
+            margin-bottom: 0
+        .secondary
+            margin-top: 0
+            font-size: 16px
+    button
+        margin-bottom: $gutter
+
+.examples
+    position: relative
+    text-align: center
+    color: #fff
+    h1
+        font-size: 54px
+    p
+        margin-top: $gutter
+        font-size: 28px
+    a
+        margin-bottom: $gutter
+    .swiper-container
+        max-width: 1100px
+        .swiper-slide
+            img
+                width: inherit
+        .swiper-pagination
+            width: 30px
+            .swiper-pagination-bullet
+                background-color: #1e1e1e
+            .swiper-pagination-bullet-active
+                background-color: #fff
+        .swiper-button-next, .swiper-button-prev
+            background: none
+            i
+                font-size: 32px
+
+.calculate
+    padding-top: $gutter
+    padding-bottom: $gutter * 2
+    text-align: center
+    .container
+        background-color: #fff
+        margin-top: $gutter
+        padding: $gutter
+        padding-bottom: $gutter * 2
+    h1
+        font-size: 54px
+    h4
+        font-size: 24px
+    .checkbox
+        font-size: 18px
+        .f-check
+            text-align: right
+        .s-check
+            text-align: left
+    .result
+        font-size: 18px
+    .row
+        position: relative
+        a.btn
+            font-size: 18px
+            display: block
+            width: 300px
+            height: 42px
+            position: absolute
+            bottom: -80px
+            left: calc(50% - 150px)
+            right: 0
+
+.stages
+    text-align: center
+    padding-bottom: $gutter
+    font-size: 18px
+    h1
+        font-size: 54px
+        margin: $gutter / 2 0
+    .col-md-4
+        text-align: left
+    i
+        font-size: 54px
+        margin-right: $gutter
+        color: $accent
+    .stage-header
+        text-transform: uppercase
+        font-size: 20px
+        font-weight: bold
+
+.reviews
+    position: relative
+    text-align: center
+    color: #fff
+    .reviews-wrapper
+        width: 100%
+        height: 100%
+        padding-bottom: $gutter
+        background-color: rgba(#000, .6)
+    .container
+        max-width: 1500px
+    h1
+        font-size: 54px
+    .swiper-container
+        .review
+            padding-left: $gutter * 2
+            padding-right: $gutter * 2
+            padding-bottom: $gutter
+            text-align: center
+            font-size: 20px
+            h3
+                font-size: 32px
+                color: #dfffff
+            p.grey
+                font-size: 14px
+                color: #888
+            .review-stars
+                color: $accent
+                i
+                    padding: 2px
+            .review-text
+                margin-top: $gutter
+                margin-bottom: $gutter / 2
+            .review-link
+                a
+                    color: $accent
+                    &:hover, &:active
+                        color: $accent
+        .swiper-pagination
+            width: 30px
+            .swiper-pagination-bullet
+                background-color: #1e1e1e
+            .swiper-pagination-bullet-active
+                background-color: #fff
+        .swiper-button-next, .swiper-button-prev
+            background: none
+            i
+                font-size: 32px
+                color: $accent
+
+.contacts
+    padding-bottom: $gutter * 4
+    padding-top: $gutter
+    h1
+        font-size: 54px
+    .contacts-left
+        a.contact-phone
+            display: block
+            font-size: 42px
+            color: #000
+            &:hover, &:active
+                color: #000
+        .company
+            font-size: 24px
+            margin-top: $gutter / 2
+        .work-time
+            font-size: 24px
+        .contact-email
+            font-size: 28px
+            a
+                color: #000
+                &:hover, &:active
+                    color: #000
+        .contacts-icon
+            i
+                font-size: 32px
+                color: $accent
+                border: 1px solid black
+                border-radius: 50%
+                padding: $gutter / 3
+                background-color: rgba(#000, .5)
+                transition: background-color .3s ease
+                &:hover
+                    background-color: rgba(#000, .7)
+    .contacts-right
+        .form-input
+            background-color: #fff
+            width: 400px
+            height: 44px
+            border: 2px solid #000
+            padding-left: $gutter / 3
+            margin-bottom: $gutter / 2
+            input
+                width: 300px
+                height: auto
+                border: none
+                background-color: rgba(#fff, .0)
+        .form-name
+            &::before
+                content: '\f2c0'
+                font-family: FontAwesome
+                font-size: 24px
+                margin-right: $gutter / 2
+                color: $accent
+        .form-phone
+            &::before
+                content: '\f095'
+                font-family: FontAwesome
+                font-size: 24px
+                margin-right: $gutter / 2
+                color: $accent
+
+.footer
+    text-align: center
+    background-color: rgba(#000, .8)
+    color: #fff
+    line-height: 42px
+    font-size: 20px
+    padding: $gutter / 3
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    .container
+        max-width: 5000px
+        margin: 0
+    .footer-logo
+        img
+            width: 250px
+    a, a:hover, a:active
+        color: #fff
+        margin-right: $gutter / 3
+
+.modal
+    .modal-dialog
+        background-color: #f7f7f7
+    .modal-title
+        font-size: 28px
+    .modal-body
+        .form-input
+            width: 100%
+            padding:
+                left: $gutter
+                right: $gutter
+            margin-bottom: $gutter / 2
+            border: 2px solid $accent
+            input
+                height: 55px
+                line-height: 55px
+                padding-left: $gutter / 2
+                border: none
+        .name::before
+            content: '\f2c0'
+            font-size: 24px
+            font-family: FontAwesome
+        .phone::before
+            content: '\f095'
+            font-size: 24px
+            font-family: FontAwesome
+        .email::before
+            content: '\f003'
+            font-size: 24px
+            font-family: FontAwesome
+        .form-input-select
+            width: 100%
+            margin-bottom: $gutter
+            border: 2px solid $accent
+            select
+                width: inherit
+                height: 55px
+                line-height: 55px
+                border: none
+                padding-left: $gutter / 2
+        button
+            display: block
+            margin: 0 auto
+            height: 35px
+            line-height: 35px
+            width: 250px
+
+.success
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    text-transform: uppercase
+    font-weight: bold
+    z-index: 10
+    span
+        margin: auto
+    & ~ *
+        transition: all .5s ease
+    &.active
+        & ~ *
+            opacity: .5
+            filter: blur(10px)
+
+/* GALLERY */
+
+.gallery-menu
+    text-align: center
+    padding: $gutter
+
+.gallery-list
+    text-align: center
+    padding-top: $gutter
+    h1
+        font-size: 54px
+        margin-bottom: $gutter
+    .col-md-4
+        padding: $gutter / 6
+        text-align: left
+        margin-bottom: $gutter / 2
+        .my-card
+            height: 100%
+            padding: $gutter / 3
+            border: 3px solid $accent
+            box-shadow: 0 0 4px $accent
+        img
+            max-width: 350px
+            max-height: 263px
+            margin: 0 auto
+
+/* individual */
+
+.individual-list
+    text-align: center
+    h1
+        font-size: 54px
+        margin-bottom: $gutter
+    .gallery
+        a
+            margin-bottom: $gutter / 2
+        img
+            max-width: 350px
+
+
+@import "media" // Always at the end
