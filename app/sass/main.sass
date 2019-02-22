@@ -83,7 +83,7 @@ b, strong
         z-index: 99
         a.navbar-brand
             img
-                width: 259px
+                width: 120px
         button.button-style
             width: 200px
             height: 35px
@@ -91,6 +91,15 @@ b, strong
             font-size: 18px
     .navbar-nav
         font-size: 18px
+        margin: 0 auto
+        text-align: center
+        img
+            display: none
+            width: 150px
+    .navbar-toggler-icon
+        display: flex
+        justify-content: center
+        align-items: center
     a.header-phone
         margin-right: $gutter / 2
         font-size: 20px
@@ -511,7 +520,9 @@ b, strong
                 right: $gutter
             margin-bottom: $gutter / 2
             border: 2px solid $accent
+            border-radius: 5px
             input
+                width: 80%
                 height: 55px
                 line-height: 55px
                 padding-left: $gutter / 2
@@ -532,6 +543,7 @@ b, strong
             width: 100%
             margin-bottom: $gutter
             border: 2px solid $accent
+            border-radius: 5px
             select
                 width: inherit
                 height: 55px

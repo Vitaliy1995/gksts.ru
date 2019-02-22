@@ -20,10 +20,7 @@
 +media-breakpoint-down(xxl)
 
     .header
-        .block-menu
-            a.navbar-brand
-                img
-                    width: 200px
+
         .navbar-nav
             font-size: 14px
         a.header-phone
@@ -31,8 +28,6 @@
 
     .services
         .card
-            img
-                width: 264px
             .card-footer
                 padding: 15% 0
                 a
@@ -63,10 +58,6 @@
 +media-breakpoint-down(lg)
 
     .header
-        .block-menu
-            a.navbar-brand
-                img
-                    width: 150px
         a.header-phone
             font-size: 14px
     .services
@@ -83,10 +74,6 @@
 +media-breakpoint-down(md)
 
     .header
-        .block-menu
-            a.navbar-brand
-                img
-                    width: 250px
         .navbar-toggler
             color: #fff
             background-color: rgba(#000, .3)
@@ -99,14 +86,21 @@
             font-size: 18px
             display: block
             margin-bottom: $gutter / 2
+            img
+                display: inline-block
         a.header-phone
+            text-align: center
             font-size: 18px
             display: block
             margin-bottom: $gutter / 2
+        .block-menu button.button-style
+            margin: 0 auto
+            display: block
 
         .block-view
             .first-p
                 font-size: 26px
+                overflow: hidden
             h1
                 font-size: 48px
             .description-p
@@ -162,6 +156,14 @@
                 font-size: 16px
 
     .stock
+        .stock-desc
+            p.first-p
+                text-align: center
+            .button-style
+                display: block
+                margin: 0 auto
+        .block-stock
+            text-align: center
         img
             max-width: 300px
 
@@ -188,6 +190,16 @@
     .advantages
         .slogan
             display: none
+
+    .reviews
+        .reviews-wrapper
+            padding-top: 20px
+            h1
+                font-size: 32px
+            .swiper-container .review h3
+                font-size: 24px
+            .review .review-text
+                font-size: 16px
 
     .contacts
         padding-bottom: 3%
@@ -217,10 +229,13 @@
 +media-breakpoint-down(xsm)
 
     .header
-        .block-menu
-            a.navbar-brand
-                img
-                    width: 200px
+        height: auto
+        .header-wrapper
+            padding-bottom: 50px
+            .row
+                padding-top: 100px
+            .go
+                display: none
         .block-view
             .first-p
                 font-size: 18px
@@ -274,6 +289,28 @@
 
 // ≥400px
 +media-breakpoint-down(xxsm)
+
+    .header
+        .row
+            margin-top: 50px
+        .block-view
+            .first-p
+                font-size: 14px
+            h1
+                font-size: 16px
+            .description-p
+                font-size: 12px
+            .button-style
+                height: 40px
+                line-height: 40px
+                font-size: 14px
+
+    .stock
+        h1
+            font-size: 24px
+        .block-stock
+            h4
+                font-size: 16px
 
     .contacts
         .button-style
