@@ -2,9 +2,9 @@ $(function() {
 
 	window.onload = function () {
 
-	    if (window.pageYOffset === 0) {
+	    /*if (window.pageYOffset === 0) {
             setToZeroBGcolor();
-        }
+        }*/
 
         if ($(this).width() >= 768) {
             setEqualHeight($('.card'));
@@ -20,11 +20,11 @@ $(function() {
 
     };
 
-	window.onscroll = function () {
+	/*window.onscroll = function () {
         (window.pageYOffset === 0)
             ? setToZeroBGcolor()
             : setToFiveBGcolor()
-    };
+    };*/
 
     var swiper = new Swiper('.swiper-container', {
         pagination: {
@@ -65,13 +65,13 @@ $(function() {
 
 });
 
-function setToZeroBGcolor () {
+/*function setToZeroBGcolor () {
     $(".block-menu").css('background-color', 'rgba(0, 0, 0, 0.0)');
 }
 
 function setToFiveBGcolor () {
     $(".block-menu").css('background-color', 'rgba(0, 0, 0, 0.5)');
-}
+}*/
 
 function setEqualHeight(list) {
     let tallestcolumn = 0;

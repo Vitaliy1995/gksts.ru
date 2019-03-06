@@ -77,8 +77,8 @@ b, strong
     .block-menu
         max-width: 5000px
         margin: 0 auto
-        background-color: rgba(#000, .4)
-        position: fixed
+        background-color: rgba(#000, 0)
+        position: static
         transition: background-color .25s ease-in
         z-index: 99
         a.navbar-brand
@@ -613,7 +613,8 @@ b, strong
         a
             margin-bottom: $gutter / 2
         img
-            max-width: 350px
+            width: 350px
+            height: 220px
 
 
 @import "media" // Always at the end
