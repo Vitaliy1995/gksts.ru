@@ -198,7 +198,7 @@ b, strong
         img
             width: 287px
             height: 172px
-            margin: 0 auto
+            margin: 5px auto
         .card-body
             height: auto
             flex: 0 0
@@ -208,24 +208,40 @@ b, strong
                 font-weight: bold
         ul
             align-items: inherit
-        p
-            padding: 0 40px
-            text-indent: 1.5em
-            text-align: justify
+            display: block
+            padding-left: 35px
+            padding-right: 20px
+            margin-bottom: 10px
+            li
+                list-style: none
+                position: relative
+                &:before
+                    content: "\f00c"
+                    font-family: FontAwesome
+                    color: #ff0000
+                    font-size: 18px
+                    position: absolute
+                    left: -25px
+                ul
+                    padding-left: 40px
+                    li
+                        list-style: circle
+                        &:before
+                            content: ""
         .card-footer
-            flex: 1 1
             background-color: transparent
-            position: relative
             height: 100%
-            padding: 10% 0
+            width: 100%
+            position: relative
+            padding: 0
             border: none
+            bottom: 0
+            top: 0
+            display: flex
+            padding-bottom: 10px
             a
-                display: block
+                align-self: flex-end
                 margin: 0 auto
-                position: absolute
-                bottom: $gutter / 2
-                left: 0
-                right: 0
 
 .stock
     text-align: center
