@@ -1,8 +1,11 @@
+# Directories
 /node_modules/
 /dist/
 /.git/
 /.idea/
 /app/css/
+
+# Files
 /**/_backstage
 /**/package-lock.json
 /**/Thumbs.db
