@@ -127,11 +127,11 @@ where the first argument is a selector to a gallery (or galleries) containing `a
 
 ```html
 <div class="gallery">
-    <a href="img/2-1.jpg" data-caption="Image caption">
-        <img src="img/thumbnails/2-1.jpg" alt="First image">
+    <a href="/app/img/2-1.jpg" data-caption="Image caption">
+        <img src="/app/img/thumbnails/2-1.jpg" alt="First image">
     </a>
-    <a href="img/2-2.jpg">
-        <img src="img/thumbnails/2-2.jpg" alt="Second image">
+    <a href="/app/img/2-2.jpg">
+        <img src="/app/img/thumbnails/2-2.jpg" alt="Second image">
     </a>
     ...
 </div>
@@ -222,16 +222,16 @@ That last `data-at-X` image is also used in the case of a screen larger than X.
 Here's an example of what the HTML code can look like:
 
 ```html
-<a href="img/2-1.jpg"
-  data-at-450="img/thumbs/2-1.jpg"
-  data-at-800="img/small/2-1.jpg"
-  data-at-1366="img/medium/2-1.jpg"
-  data-at-1920="img/big/2-1.jpg">
-    <img src="img/thumbs/2-1.jpg">
+<a href="/app/img/2-1.jpg"
+  data-at-450="/app/img/thumbs/2-1.jpg"
+  data-at-800="/app/img/small/2-1.jpg"
+  data-at-1366="/app/img/medium/2-1.jpg"
+  data-at-1920="/app/img/big/2-1.jpg">
+    <img src="/app/img/thumbs/2-1.jpg">
 </a>
 ```
 
-If you have 1366x768 resolution baguetteBox.js will choose `"img/medium/2-1.jpg"`. If, however, it's 1440x900 it'll choose `"img/big/2-1.jpg"`. Keep the `href` attribute as a fallback (link to a bigger image e.g. of HD size) for older browsers.
+If you have 1366x768 resolution baguetteBox.js will choose `"/app/img/medium/2-1.jpg"`. If, however, it's 1440x900 it'll choose `"/app/img/big/2-1.jpg"`. Keep the `href` attribute as a fallback (link to a bigger image e.g. of HD size) for older browsers.
 
 ## Compatibility
 
