@@ -4,8 +4,14 @@
 include_once $_SERVER['DOCUMENT_ROOT'] . "/app/constants/constants.php";
 include_once $_SERVER['DOCUMENT_ROOT'] . "/app/data/data.php";
 include_once $_SERVER['DOCUMENT_ROOT'] . "/app/functions/getCurrentUri.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/app/functions/getDataFromSql.php";
 
+// Получение meta-данных из метода getCurrentUri
+// TODO переделать название метода и логику
 $arMetaData = getCurrentUri();
+
+/* Соберем данные для главной страницы */
+$mainMenu = getTopMenuSql();
 
 // Подключение шапки сайта
 include_once $_SERVER['DOCUMENT_ROOT'] . "/app/main/header.php";

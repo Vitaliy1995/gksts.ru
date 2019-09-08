@@ -19,3 +19,10 @@ define("MAIN_EMAIL", "rsksts@yandex.ru");
 define("INSTAGRAM_LINK", "https://www.instagram.com/stroyservis.msk/");
 
 define("TIME_WORK", "ежедневно, 10:00 - 22:00");
+
+
+// Данный для подключения к Mysql
+define("MYSQL_HOST", "127.0.0.1");
+define("MYSQL_DATABASE", "gksts");
+define("MYSQL_USER", "root");
+define("MYSQL_PASSWORD", "123456");
