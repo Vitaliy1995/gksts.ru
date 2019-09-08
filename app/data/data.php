@@ -13,14 +13,6 @@ $seoData = [
         "title" => "Примеры работ",
         "description" => "Ремонт фото, строительство фото, отделка фото"
     ],
-    "designing",
-    "building",
-    "beautification",
-    "pools",
-    "estimate",
-    "installation",
-    "decoration",
-    "interior",
 ];
 
 
@@ -67,7 +59,7 @@ $servicesBlock = [
                     "слаботочные сети",
                 ]
             ],
-            "link" => "design.html"
+            "link" => "/gallery/design/"
         ],
         // Строительство домов и коттеджей
         "building" => [
@@ -81,7 +73,7 @@ $servicesBlock = [
                 "устройство кровли из металлочерепицы",
                 "устройство кровли из мягкой черепицы",
             ],
-            "link" => "building.html"
+            "link" => "/gallery/building/"
         ],
         // Благоустройство
         "beautification" => [
@@ -96,7 +88,7 @@ $servicesBlock = [
                 "устройство дорожек из брусчатки",
                 "завоз и планировка плодородного грунта",
             ],
-            "link" => "facade-decoration.html"
+            "link" => "/gallery/beautification/"
         ],
         // Проектирование и строительство бассейнов
         "pools" => [
@@ -110,7 +102,7 @@ $servicesBlock = [
                 "отделка чаши мозаикой, плиткой, пленкой",
                 "эксплуатация и обслуживание",
             ],
-            "link" => "pools.html"
+            "link" => "/gallery/pools/"
         ],
         // Составление смет
         "estimate" => [
@@ -164,7 +156,7 @@ $servicesBlock = [
                 "укладка плитки, керамогранита, мозаики",
                 "укладка ламината, инженерной доски, линолеума",
             ],
-            "link" => "repairs.html"
+            "link" => "/gallery/repairs/"
         ]
     ]
 ];
@@ -298,6 +290,391 @@ $reviewsBlock = [
             "stars" => 5,
             "text" => "Выражаю благодарность сотрудникам компании \"ИП Шевчук\" за оперативность и высокое качество выполняемых работ по реконструкции индивидуального жилого дома. За время сотрудничества организация проявила себя надежным и ответственным подрядчиком. Работа производилась на высоком профессиональном уровне. Особо хочется отметить эффективную организацию производственного процесса, компетентность специалистов компании, индивидуальный подход и гибкость в решении нестандартных задач.<br>Надеюсь на дальнейшее сотрудничество.",
             "full_link" => "/app/img/reviews/ermakov.pdf"
+        ]
+    ]
+];
+
+/**
+ * Галерея
+ */
+$galleryBlock = [
+    "title" => "Галерея",
+    "gallery" => [
+        [
+            "img" => "/app/img/photos/design/1.jpg",
+            "name" => "Проектирование",
+            "link" => "/gallery/designing/"
+        ],
+        [
+            "img" => "/app/img/photos/cottage-velednikovo/8.jpg",
+            "name" => "Строительство домов и коттеджей",
+            "link" => "/gallery/building/"
+        ],
+        [
+            "img" => "/app/img/photos/cottage-velednikovo/13.jpg",
+            "name" => "Благоустройство участка",
+            "link" => "/gallery/beautification/"
+        ],
+        [
+            "img" => "/app/img/photos/pools/1.jpg",
+            "name" => "Проектирование и строительство бассейнов",
+            "link" => "/gallery/pools/"
+        ],
+        [
+            "img" => "/app/img/photos/cottage-velednikovo/10.jpg",
+            "name" => "Внутренняя отделка и капитальный ремонт",
+            "link" => "/gallery/repairs/"
+        ],
+        [
+            "img" => "/app/img/photos/cottage/1.jpg",
+            "name" => "Контроль качества работ строительства коттеджа",
+            "link" => "/gallery/control-quality/"
+        ],
+        [
+            "img" => "/app/img/photos/repair-for-fitness/2.jpg",
+            "name" => "Ремонт помещения под размещение фитнес-клуба",
+            "link" => "/gallery/repair-for-fitness/"
+        ]
+    ]
+];
+
+/**
+ * Альбомы
+ */
+$galleryAlbum = [
+    "/gallery/designing/" => [
+        "name" => "Проектирование",
+        "images" => [
+            [
+                "title" => "Визуализация бассейна",
+                "link" => "/app/img/photos/design/1.jpg"
+            ],
+            [
+                "title" => "Визуализация бассейна",
+                "link" => "/app/img/photos/design/2.jpg"
+            ],
+            [
+                "title" => "Визуализация холл фитнес-клуб",
+                "link" => "/app/img/photos/design/3.png"
+            ],
+            [
+                "title" => "Визуализация холл фитнес-клуб",
+                "link" => "/app/img/photos/design/4.png"
+            ],
+            [
+                "title" => "Визуализация кардио зона",
+                "link" => "/app/img/photos/design/5.jpg"
+            ],
+            [
+                "title" => "Визуализация холл фитнес-клуб",
+                "link" => "/app/img/photos/design/6.jpg"
+            ],
+            [
+                "title" => "Визуализация тренажерный зал",
+                "link" => "/app/img/photos/design/9.jpg"
+            ],
+            [
+                "title" => "Визуализация раздевалка",
+                "link" => "/app/img/photos/design/10.jpg"
+            ],
+            [
+                "title" => "Визуализация душевая",
+                "link" => "/app/img/photos/design/13.jpg"
+            ]
+        ]
+    ],
+    "/gallery/building/" => [
+        "name" => "Строительство домов и коттеджей",
+        "images" => [
+            [
+                "title" => "Фундаментная плита коттеджа",
+                "link" => "/app/img/photos/cottage-velednikovo/1.jpg"
+            ],
+            [
+                "title" => "Устройство стен из газоблока",
+                "link" => "/app/img/photos/cottage-velednikovo/3.jpg"
+            ],
+            [
+                "title" => "Устройство стен из газоблока",
+                "link" => "/app/img/photos/cottage-velednikovo/4.jpg"
+            ],
+            [
+                "title" => "Устройство крыши из мягкой черепицы",
+                "link" => "/app/img/photos/cottage-velednikovo/5.jpg"
+            ],
+            [
+                "title" => "Отделка фасада коттеджа",
+                "link" => "/app/img/photos/cottage-velednikovo/6.jpg"
+            ],
+            [
+                "title" => "Благоустройство территории",
+                "link" => "/app/img/photos/cottage-velednikovo/7.jpg"
+            ],
+            [
+                "title" => "Отделка фасада коттеджа планкеном",
+                "link" => "/app/img/photos/cottage-velednikovo/8.jpg"
+            ],
+            [
+                "title" => "Покраска фасада",
+                "link" => "/app/img/photos/cottage-velednikovo/11.jpg"
+            ],
+            [
+                "title" => "Укладка гранитных плиток на балконе",
+                "link" => "/app/img/photos/cottage-velednikovo/11.2.jpg"
+            ],
+            [
+                "title" => "Окончание работ по строительству коттеджа",
+                "link" => "/app/img/photos/cottage-velednikovo/12.jpg"
+            ],
+            [
+                "title" => "Окончание работ по строительству коттеджа",
+                "link" => "/app/img/photos/cottage-velednikovo/13.jpg"
+            ],
+            [
+                "title" => "Окончание работ по строительству коттеджа",
+                "link" => "/app/img/photos/cottage-velednikovo/14.jpg"
+            ],
+            [
+                "title" => "Окончание работ по строительству коттеджа",
+                "link" => "/app/img/photos/cottage-velednikovo/15.jpg"
+            ],
+            [
+                "title" => "Отделка подпорной стенки искуственным камнем",
+                "link" => "/app/img/photos/cottage-velednikovo/17.jpg"
+            ],
+            [
+                "title" => "Отделка подпорной стенки искуственным камнем",
+                "link" => "/app/img/photos/cottage-velednikovo/18.jpg"
+            ]
+        ]
+    ],
+    "/gallery/beautification/" => [
+        "name" => "Благоустройство участка",
+        "images" => [
+            [
+                "title" => "Благоустройство участка",
+                "link" => "/app/img/photos/cottage-velednikovo/12.jpg"
+            ],
+            [
+                "title" => "Благоустройство участка",
+                "link" => "/app/img/photos/cottage-velednikovo/13.jpg"
+            ],
+            [
+                "title" => "Благоустройство участка",
+                "link" => "/app/img/photos/cottage-velednikovo/14.jpg"
+            ],
+        ]
+    ],
+    "/gallery/pools/" => [
+        "name" => "Проектирование и строительство бассейнов",
+        "images" => [
+            [
+                "title" => "Отделка бассейна мозаикой",
+                "link" => "/app/img/photos/pools/1.jpg"
+            ],
+            [
+                "title" => "Отделка бассейна мозаикой",
+                "link" => "/app/img/photos/pools/2.jpg"
+            ],
+            [
+                "title" => "Отделка бассейна мозаикой",
+                "link" => "/app/img/photos/pools/3.jpg"
+            ],
+            [
+                "title" => "Отделка бассейна мозаикой",
+                "link" => "/app/img/photos/pools/4.jpg"
+            ],
+            [
+                "title" => "Отделка бассейна мозаикой",
+                "link" => "/app/img/photos/pools/5.jpg"
+            ],
+            [
+                "title" => "Отделка бассейна мозаикой",
+                "link" => "/app/img/photos/pools/6.jpg"
+            ],
+            [
+                "title" => "Отделка бассейна мозаикой",
+                "link" => "/app/img/photos/pools/7.jpg"
+            ],
+            [
+                "title" => "Строительство хаммама",
+                "link" => "/app/img/photos/pools/8.jpg"
+            ],
+            [
+                "title" => "Строительство хаммама",
+                "link" => "/app/img/photos/pools/9.jpg"
+            ],
+            [
+                "title" => "Строительство хаммама",
+                "link" => "/app/img/photos/pools/10.jpg"
+            ],
+            [
+                "title" => "Строительство хаммама",
+                "link" => "/app/img/photos/pools/11.jpg"
+            ],
+            [
+                "title" => "Строительство хаммама",
+                "link" => "/app/img/photos/pools/12.jpg"
+            ]
+        ]
+    ],
+    "/gallery/repairs/" => [
+        "name" => "Внутренняя отделка и капитальный ремонт",
+        "images" => [
+            [
+                "title" => "Подготовка стен комнаты",
+                "link" => "/app/img/photos/cottage-velednikovo/9.jpg"
+            ],
+            [
+                "title" => "Подготовка стен комнаты",
+                "link" => "/app/img/photos/cottage-velednikovo/10.jpg"
+            ],
+            [
+                "title" => "Подготовка стен комнаты",
+                "link" => "/app/img/photos/cottage-velednikovo/11.1.jpg"
+            ],
+            [
+                "title" => "Укладка плитки на стены",
+                "link" => "/app/img/photos/cottage-velednikovo/11.3.jpg"
+            ],
+            [
+                "title" => "Косметический ремонт салона красоты",
+                "link" => "/app/img/photos/repair-for-spa/1.jpg"
+            ],
+            [
+                "title" => "Косметический ремонт салона красоты",
+                "link" => "/app/img/photos/repair-for-spa/2.jpg"
+            ],
+            [
+                "title" => "Косметический ремонт салона красоты",
+                "link" => "/app/img/photos/repair-for-spa/3.jpg"
+            ],
+            [
+                "title" => "Косметический ремонт салона красоты",
+                "link" => "/app/img/photos/repair-for-spa/4.jpg"
+            ],
+            [
+                "title" => "Косметический ремонт салона красоты",
+                "link" => "/app/img/photos/repair-for-spa/5.jpg"
+            ],
+            [
+                "title" => "Косметический ремонт салона красоты",
+                "link" => "/app/img/photos/repair-for-spa/6.jpg"
+            ],
+            [
+                "title" => "Косметический ремонт салона красоты",
+                "link" => "/app/img/photos/repair-for-spa/7.jpg"
+            ]
+        ]
+    ],
+    "/gallery/control-quality/" => [
+        "name" => "Контроль качества работ строительства коттеджа",
+        "images" => [
+            [
+                "title" => "Устройство плиты перекрытия",
+                "link" => "/app/img/photos/cottage/1.jpg"
+            ],
+            [
+                "title" => "Армирование плиты перекрытия",
+                "link" => "/app/img/photos/cottage/2.jpg"
+            ],
+            [
+                "title" => "Устройство кровли из черепицы",
+                "link" => "/app/img/photos/cottage/3.1.jpg"
+            ],
+            [
+                "title" => "Строительство коттеджа",
+                "link" => "/app/img/photos/cottage/3.jpg"
+            ],
+            [
+                "title" => "Устройство клинкерной кладки",
+                "link" => "/app/img/photos/cottage/4.jpg"
+            ],
+            [
+                "title" => "Устройство клинкерной кладки",
+                "link" => "/app/img/photos/cottage/6.jpg"
+            ],
+            [
+                "title" => "Устройство клинкерной кладки",
+                "link" => "/app/img/photos/cottage/7.jpg"
+            ],
+            [
+                "title" => "Устройство клинкерной кладки",
+                "link" => "/app/img/photos/cottage/8.jpg"
+            ],
+            [
+                "title" => "Устройство клинкерной кладки",
+                "link" => "/app/img/photos/cottage/11.jpg"
+            ],
+            [
+                "title" => "Отделка дымоходов",
+                "link" => "/app/img/photos/cottage/12.jpg"
+            ],
+            [
+                "title" => "Устройство ж/б лестничного марша",
+                "link" => "/app/img/photos/cottage/14.jpg"
+            ],
+            [
+                "title" => "Устройство ж/б лестничного марша",
+                "link" => "/app/img/photos/cottage/15.jpg"
+            ],
+            [
+                "title" => "Устройство ж/б лестничного марша",
+                "link" => "/app/img/photos/cottage/16.jpg"
+            ]
+        ]
+    ],
+    "/gallery/repair-for-fitness/" => [
+        "name" => "Ремонт помещения под размещение фитнес-клуба",
+        "images" => [
+            [
+                "title" => "Устройство ж/б чаши бассейна",
+                "link" => "/app/img/photos/repair-for-fitness/1.jpg"
+            ],
+            [
+                "title" => "Отделка тренажерного зала",
+                "link" => "/app/img/photos/repair-for-fitness/2.jpg"
+            ],
+            [
+                "title" => "Отделка тренажерного зала",
+                "link" => "/app/img/photos/repair-for-fitness/3.jpg"
+            ],
+            [
+                "title" => "Отделка тренажерного зала",
+                "link" => "/app/img/photos/repair-for-fitness/4.jpg"
+            ],
+            [
+                "title" => "Отделка тренажерного зала",
+                "link" => "/app/img/photos/repair-for-fitness/5.jpg"
+            ],
+            [
+                "title" => "Отделка тренажерного зала",
+                "link" => "/app/img/photos/repair-for-fitness/6.jpg"
+            ],
+            [
+                "title" => "Отделка зала групповых занятий",
+                "link" => "/app/img/photos/repair-for-fitness/8.jpg"
+            ],
+            [
+                "title" => "Душевые",
+                "link" => "/app/img/photos/repair-for-fitness/9.jpg"
+            ],
+            [
+                "title" => "Душевые",
+                "link" => "/app/img/photos/repair-for-fitness/10.jpg"
+            ],
+            [
+                "title" => "Душевые",
+                "link" => "/app/img/photos/repair-for-fitness/11.jpg"
+            ],
+            [
+                "title" => "Душевые",
+                "link" => "/app/img/photos/repair-for-fitness/12.jpg"
+            ],
+            [
+                "title" => "Душевые",
+                "link" => "/app/img/photos/repair-for-fitness/13.jpg"
+            ]
         ]
     ]
 ];

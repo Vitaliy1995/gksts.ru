@@ -1,3 +1,8 @@
+RewriteEngine On
+
+RewriteRule ^gallery/$ app/gallery/index.php [NC,L]
+RewriteRule ^gallery/([a-z\-]+)/$ app/gallery/route/index.php [NC,L]
+
 <ifModule mod_expires.c>
 
 # Add correct content-type for fonts
@@ -43,8 +48,3 @@ ExpiresByType application/xhtml+xml "access plus 600 seconds"
 AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
 
 </ifModule>
-
-### Start server rules ###
-RewriteEngine On
-
-RewriteRule ^gallery/$ gksts/app/gallery/index.php [NC,L]

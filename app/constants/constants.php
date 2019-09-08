@@ -3,6 +3,12 @@
 define("SITE_NAME", "Группа компаний Строй Сервис");
 define("SITE_BRAND_NAME", "Строй сервис");
 
+define("MAIN_PAGE_TITLE", "Ремонт, строительство, отделка");
+define("MAIN_PAGE_DESCRIPTION", "Ремонт, строительство, отделка");
+
+define("GALLERY_PAGE_TITLE", "Примеры работ");
+define("GALLERY_PAGE_DESCRIPTION", "Примеры работ стросервис");
+
 define("MAIN_LOGO", "/app/img/logo.svg");
 
 define("MAIN_PHONE_NUMBER", "89859945556");

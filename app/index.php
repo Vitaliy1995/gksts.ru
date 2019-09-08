@@ -27,7 +27,7 @@
                     <p class="first-p"><?= $mainBlock['name'] ?></p>
                     <h1><?= $mainBlock['title'] ?></h1>
                     <p class="description-p"><?= $mainBlock['description'] ?></p>
-                    <?php include $_SERVER['DOCUMENT_ROOT'] . "/app/conponents/button_callback.php" ?>
+                    <?php include $_SERVER['DOCUMENT_ROOT'] . "/app/components/button_callback.php" ?>
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@
                             </div>
                         </div>
                     </div>
-                    <?php include $_SERVER['DOCUMENT_ROOT'] . "/app/conponents/button_callback.php" ?>
+                    <?php include $_SERVER['DOCUMENT_ROOT'] . "/app/components/button_callback.php" ?>
                 </div>
             </div>
         </div>
@@ -116,7 +116,7 @@
                             </div>
                         <?php endforeach; ?>
                     </div>
-                    <?php include $_SERVER['DOCUMENT_ROOT'] . "/app/conponents/button_callback.php" ?>
+                    <?php include $_SERVER['DOCUMENT_ROOT'] . "/app/components/button_callback.php" ?>
                 </div>
             </div>
         </div>
