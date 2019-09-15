@@ -26,7 +26,11 @@ function fetchData($data) {
     {
         $row = mysqli_fetch_row($data);
         // Уберем id из возвращаемого массива
-        $result[] = array_slice($row, 1);
+        if (intval($row[0])) {
+            $result[] = array_slice($row, 1);
+            continue;
+        }
+        $result[] = $row;
     }
 
     return $result;

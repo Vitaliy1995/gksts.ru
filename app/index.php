@@ -37,11 +37,12 @@
 
 <main class="main">
 
-    <section class="services" id="services" style="background-color: #F7F7F7">
-        <h1 class="wow bounceInDown"><?= $servicesBlock['title'] ?></h1>
+    <?php if (count($servicesBlock) > 0): ?>
+        <section class="services" id="services" style="background-color: #F7F7F7">
+        <h1 class="wow bounceInDown"><?= $categoryNames[$arCategoryId['service']] ?></h1>
         <div class="container">
             <div class="row">
-                <?php foreach ($servicesBlock['points'] as $point): ?>
+                <?php foreach ($servicesBlock as $point): ?>
                 <div class="col-lg-3 wow <?= $point['classes'] ?>">
                     <div class="card">
                         <img src="<?= $point['img'] ?>" alt="<?= $point['name'] ?>">
@@ -75,7 +76,9 @@
             </div>
         </div>
     </section>
+    <?php endif; ?>
 
+    <?php if (count($stocksBlock) > 0): ?>
     <section class="stock" id="stock" style="background-color: #232328">
         <h1 class="wow zoomIn"><?= $stocksBlock['title'] ?></h1>
         <div class="container">
@@ -98,7 +101,9 @@
             </div>
         </div>
     </section>
+    <?php endif; ?>
 
+    <?php if (count($advantagesBlock) > 0): ?>
     <section class="advantages" id="advantages">
         <div class="container">
             <div class="row">
@@ -121,7 +126,9 @@
             </div>
         </div>
     </section>
+    <?php endif; ?>
 
+    <?php if (count($examplesBlock) > 0): ?>
     <section class="examples" id="examples" style="background-image: url(/app/img/background.jpg)">
         <h1><?= $examplesBlock['title'] ?></h1>
         <div class="container">
@@ -147,9 +154,11 @@
             </div>
         </div>
     </section>
+    <?php endif; ?>
 
+    <?php if (count($stagesBlock) > 0): ?>
     <section class="stages" id="stages" style="background-color: #fff">
-        <h1><?= $stagesBlock['title'] ?></h1>
+        <h1><?= $categoryNames[$arCategoryId['stages']] ?></h1>
         <div class="container">
             <div class="row">
                 <?php foreach ($stagesBlock['stages'] as $stage): ?>
@@ -162,10 +171,12 @@
             </div>
         </div>
     </section>
+    <?php endif; ?>
 
+    <?php if (count($reviewsBlock) > 0): ?>
     <section class="reviews" id="reviews" style="background-image: url(/app/img/bg-3.jpg)">
         <div class="reviews-wrapper">
-            <h1><?= $reviewsBlock['title'] ?></h1>
+            <h1><?= $categoryNames[$arCategoryId['review']] ?></h1>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -196,6 +207,7 @@
             </div>
         </div>
     </section>
+    <?php endif; ?>
 
     <section class="contacts" id="contacts" style="background-image: url(/app/img/bg-contacts.jpeg)">
         <div class="container">

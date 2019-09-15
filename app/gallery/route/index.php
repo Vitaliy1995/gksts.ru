@@ -2,6 +2,9 @@
 // Подключение основных файлов
 include_once $_SERVER['DOCUMENT_ROOT'] . "/app/constants/constants.php";
 include_once $_SERVER['DOCUMENT_ROOT'] . "/app/data/data.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/app/functions/getDataFromSql.php";
+
+$galleryAlbum = getGalleryAlbumSql();
 
 $cur_uri = explode("?", $_SERVER['REQUEST_URI'])[0];
 if (!key_exists($cur_uri, $galleryAlbum)) {

@@ -3,8 +3,14 @@
 include_once $_SERVER['DOCUMENT_ROOT'] . "/app/constants/constants.php";
 include_once $_SERVER['DOCUMENT_ROOT'] . "/app/data/data.php";
 include_once $_SERVER['DOCUMENT_ROOT'] . "/app/functions/getCurrentUri.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/app/functions/getDataFromSql.php";
 
 $arMetaData = getCurrentUri();
+
+/* Соберем данные для галереи */
+$categoryNames = getAllCategory();
+$galleryBlock = getGalleryBlockSql();
+//$galleryAlbum = ;
 
 include_once $_SERVER['DOCUMENT_ROOT'] . "/app/main/header.php";
 ?>
@@ -23,7 +29,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/app/main/header.php";
 <main class="gallery-main">
 
     <section class="gallery-list">
-        <h1><?= $galleryBlock['title'] ?></h1>
+        <h1><?= $arCategoryId[$categoryNames['gallery']] ?></h1>
         <div class="container">
             <div class="row">
                 <?php foreach ($galleryBlock['gallery'] as $block): ?>

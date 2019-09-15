@@ -11,7 +11,15 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/app/functions/getDataFromSql.php";
 $arMetaData = getCurrentUri();
 
 /* Соберем данные для главной страницы */
+$categoryNames = getAllCategory();
 $mainMenu = getTopMenuSql();
+$mainBlock = getTopBlockSql();
+$servicesBlock = getServiceBlockSql();
+$stocksBlock = getStockBlockSql();
+$advantagesBlock = getAdvantagesBlockSql();
+$examplesBlock = getExamplesBlockSql();
+$stagesBlock = getStagesBlockSql();
+$reviewsBlock = getReviewBlockSql();
 
 // Подключение шапки сайта
 include_once $_SERVER['DOCUMENT_ROOT'] . "/app/main/header.php";
