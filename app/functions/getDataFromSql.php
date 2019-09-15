@@ -258,7 +258,7 @@ function getReviewBlockSql() {
     return $arReturnReviewBlock;
 }
 
-// Галерея
+/* Стрнаца галереи */
 function getGalleryBlockSql() {
     $queryGetGalleryBlock ="SELECT * FROM gallery_block";
 
@@ -294,43 +294,6 @@ function getGalleryAlbumSql() {
 
     if (!isset($fetchGalleryAlbum))
         return;
-
-    /*$album - массив
-    $album[0] = NAME
-    $album[1] = LINK  -- key
-    $album[2] = TITLE
-    $album[3] = IMAGE;
-
-    $galleryAlbum = [
-        "/gallery/design/" => [
-            "name" => "Дизайн",
-            "images" => [
-                0 => [
-                    "title" => "ОПисание 1",
-                    "link" => "/imga...."
-                ],
-                1 => [
-                    "title" => "ОПисание 2",
-                    "link" => "/imga...."
-                ]
-            ]
-        ],
-        "/gallery/buildin/" => [
-            "name" => "Дизайн",
-            "images" => [
-                0 => [
-                    "title" => "ОПисание 1",
-                    "link" => "/imga...."
-                ],
-                1 => [
-                    "title" => "ОПисание 2",
-                    "link" => "/imga...."
-                ]
-            ]
-        ],
-    ];
-
-    $galleryAlbum =  $arReturnGalleryAlbum;*/
 
     $arReturnGalleryAlbum = array();
     foreach ($fetchGalleryAlbum as $key => $album) {

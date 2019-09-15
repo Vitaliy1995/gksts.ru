@@ -3,6 +3,18 @@ RewriteEngine On
 RewriteRule ^gallery/$ app/gallery/index.php [NC,L]
 RewriteRule ^gallery/([a-z\-]+)/$ app/gallery/route/index.php [NC,L]
 
+RewriteRule ^admin/$ app/admin/index.php [NC,L]
+RewriteRule ^admin/menu/$ app/admin/index.php [NC,L]
+RewriteRule ^admin/main/$ app/admin/index.php [NC,L]
+RewriteRule ^admin/services/$ app/admin/index.php [NC,L]
+RewriteRule ^admin/stock/$ app/admin/index.php [NC,L]
+RewriteRule ^admin/advantages/$ app/admin/index.php [NC,L]
+RewriteRule ^admin/examples/$ app/admin/index.php [NC,L]
+RewriteRule ^admin/stages/$ app/admin/index.php [NC,L]
+RewriteRule ^admin/reviews/$ app/admin/index.php [NC,L]
+RewriteRule ^admin/gallery/$ app/admin/index.php [NC,L]
+RewriteRule ^admin/constants/$ app/admin/index.php [NC,L]
+
 <ifModule mod_expires.c>
 
 # Add correct content-type for fonts

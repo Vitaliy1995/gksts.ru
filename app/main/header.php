@@ -12,8 +12,8 @@
 
 	<!-- Template Basic Images Start -->
 	<!--<meta property="og:image" content="path/to/image.jpg">-->
-	<link rel="icon" href="/app//app/img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="/app//app/img/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" href="/app/app/img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/app/app/img/favicon/apple-touch-icon-180x180.png">
 	<!-- Template Basic Images End -->
 
 	<!-- Custom Browsers Color Start -->
