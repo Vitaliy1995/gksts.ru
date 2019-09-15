@@ -4,6 +4,8 @@ function openSqlCoonection() {
     $connection = mysqli_connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE)
         or die("Ошибка " . mysqli_error($connection));
 
+    mysqli_set_charset($connection, "utf8");
+
     return $connection;
 }
 

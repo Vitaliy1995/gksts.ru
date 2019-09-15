@@ -3,6 +3,7 @@
 /dist/
 /.git/
 /.idea/
+/app/constants/
 
 # Files
 /**/_backstage
