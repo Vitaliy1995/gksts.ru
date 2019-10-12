@@ -24,6 +24,21 @@ gulp.task('browser-sync', function() {
 	})
 });
 
+// Deploy
+gulp.task('rsync', () => {
+	return gulp.src('app/**')
+		.pipe(rsync({
+			root: 'app/',
+			hostname: 'p444268:cdBjKy3sNR@178.57.223.215',
+			destination: 'public_html/app/',
+			exclude: ['**/Thumbs.db', '**/*.DS_Store'],
+			recursive: true,
+			archive: true,
+			silent: false,
+			compress: true
+		}));
+});
+
 gulp.task('styles', function() {
 	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
 	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
