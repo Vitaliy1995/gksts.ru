@@ -1,6 +1,5 @@
 <?php
 
-mb_internal_encoding("UTF-8");
 $_SERVER['DOCUMENT_ROOT'] = __DIR__;
 
 // Подключение основных файлов
