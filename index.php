@@ -1,5 +1,7 @@
 <?php
 
+$_SERVER['DOCUMENT_ROOT'] = __DIR__;
+
 // Подключение основных файлов
 include_once $_SERVER['DOCUMENT_ROOT'] . "/app/constants/constants.php";
 include_once $_SERVER['DOCUMENT_ROOT'] . "/app/data/data.php";
